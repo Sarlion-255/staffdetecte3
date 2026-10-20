@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "staffdetecte",
+  "version": "${version}",
+  "name": "StaffDetecte",
+  "description": "Confronta scoreboard e tab per scoprire staffer in vanish e avvisa quando uno staffer (anche in spectator) si teletrasporta da te.",
+  "authors": ["StaffDetecte"],
+  "license": "MIT",
+  "environment": "client",
+  "mixins": ["staffdetecte.mixins.json"],
+  "entrypoints": {
+    "client": ["it.staffdetecte.StaffDetecteClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
